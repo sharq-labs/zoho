@@ -1,66 +1,58 @@
 {
-  "name": "sharq-labs/zoho",
+  "name": "asciisd/zoho",
   "description": "A fork of Asciisd Zoho, providing an elegant and easy way to communicate with Zoho CRM.",
   "keywords": [
-      "Laravel",
-      "zoho",
-      "crm"
+    "Laravel",
+    "zoho",
+    "crm"
   ],
   "license": "MIT",
   "support": {
-      "issues": "https://github.com/developer-kareem-elsharkawy/zoho/issues",
-      "source": "https://github.com/developer-kareem-elsharkawy/zoho"
+    "issues": "https://github.com/developer-kareem-elsharkawy/zoho/issues",
+    "source": "https://github.com/developer-kareem-elsharkawy/zoho"
   },
   "authors": [
-      {
-          "name": "Hassan Al-Jaramer",
-          "email": "your-email@example.com",
-          "role": "Maintainer"
-      },
-      {
-          "name": "Amr Ahmed",
-          "email": "aemaddin@gmail.com",
-          "role": "Developer"
-      }
+    {
+      "name": "Hassan Al-Jaramer",
+      "email": "your-email@example.com",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Amr Ahmed",
+      "email": "aemaddin@gmail.com",
+      "role": "Developer"
+    }
   ],
   "require": {
     "php": "^8.1",
     "ext-json": "*",
-    "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+    "illuminate/support": "^10.0|^11.0",
     "nesbot/carbon": "^2.0|^3.0",
     "asciisd/zcrm-php-sdk": "^2.0"
   },
-  "require-dev": {
-      "mockery/mockery": "^1.4.4",
-      "orchestra/testbench": "^4.0|^5.0|^6.0",
-      "phpunit/phpunit": "^9.5.10"
-  },
-  "suggest": {
-      "ext-intl": "Allows for more locales besides the default \"en\" when formatting money values."
-  },
   "autoload": {
-      "psr-4": {
-          "Asciisd\\Zoho\\": "src/"
-      }
+    "psr-4": {
+      "Asciisd\\Zoho\\": "src/"
+    }
   },
   "autoload-dev": {
-      "psr-4": {
-          "Asciisd\\Zoho\\Tests\\": "tests/"
-      }
+    "psr-4": {
+      "Asciisd\\Zoho\\Tests\\": "tests/"
+    }
   },
   "extra": {
-      "laravel": {
-          "providers": [
-              "Asciisd\\Zoho\\Providers\\ZohoServiceProvider"
-          ]
-      }
+    "laravel": {
+      "providers": [
+        "Asciisd\\Zoho\\Providers\\ZohoServiceProvider"
+      ]
+    }
   },
   "scripts": {
-      "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
-      "analysis": "vendor/bin/phpstan analyse"
+    "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
+    "analysis": "vendor/bin/phpstan analyse"
   },
   "config": {
-      "sort-packages": true
+    "sort-packages": true
   },
   "minimum-stability": "dev",
   "prefer-stable": true
